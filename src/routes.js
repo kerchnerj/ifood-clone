@@ -1,11 +1,12 @@
 import React from 'react';
 
 import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MaterialIcons } from '@expo/vector-icons';
 
 import Home from './screens/Home';
-import Busca from './screens/Busca';
+import Buscar from './screens/Buscar';
 import Perfil from './screens/Perfil';
 import Pedidos from './screens/Pedidos';
 import Pagamentos from './screens/Pagamentos';
@@ -44,10 +45,10 @@ return (
         }}
         />
     <BottomTab.Screen
-        name="Busca"
-        component={Busca}
+        name="Buscar"
+        component={Buscar}
         options={{
-        tabBarLabel: 'Busca',
+        tabBarLabel: 'Buscar',
         tabBarIcon: ({ color }) => (
         <MaterialIcons name="search" color={color} size={26} />
         ),
