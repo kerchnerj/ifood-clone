@@ -1,79 +1,78 @@
 import React from "react";
 import {
-  ScrollView,
-  Text,
-  TouchableOpacity,
-  View,
-  StyleSheet,
+    ScrollView,
+    Text,
+    TouchableOpacity,
+    View,
+    StyleSheet,
 } from "react-native";
 import { MaterialCommunityIcons, MaterialIcons } from "@expo/vector-icons";
 
 export default function Perfil({ navigation }) {
-  return (
+    return (
     <ScrollView style={styles.container}>
-      <ScrollView>
+        <ScrollView>
         <TouchableOpacity style={styles.option} onPress={() => {}}>
-          <MaterialCommunityIcons name="bell-outline" size={35} color="#333" />
-          <ScrollView style={styles.info}>
+            <MaterialCommunityIcons name="bell-outline" size={35} color="#333" />
+            <ScrollView style={styles.info}>
             <Text style={styles.title}>Notificações</Text>
             <Text style={styles.description}>
-              Minha central de notificações
+            Minha central de notificações
             </Text>
-          </ScrollView>
-          <MaterialIcons name="keyboard-arrow-right" color="#999" size={20} />
+            </ScrollView>
+            <MaterialIcons name="keyboard-arrow-right" color="#999" size={20} />
         </TouchableOpacity>
         <TouchableOpacity
-          style={styles.option}
-          onPress={() => navigation.navigate("Pagamentos")}
-        >
-          <MaterialCommunityIcons name="credit-card" size={35} color="#333" />
-          <ScrollView style={styles.info}>
+            style={styles.option}
+            onPress={() => navigation.navigate("Pagamentos")}>
+            <MaterialCommunityIcons name="credit-card" size={35} color="#333" />
+            <ScrollView style={styles.info}>
             <Text style={styles.title}>Pagamentos</Text>
             <Text style={styles.description}>Meus saldos e cartões</Text>
-          </ScrollView>
-          <MaterialIcons name="keyboard-arrow-right" color="#999" size={20} />
+            </ScrollView>
+            <MaterialIcons name="keyboard-arrow-right" color="#999" size={20} />
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.option} onPress={() => {}}>
-          <MaterialCommunityIcons
+            <MaterialCommunityIcons
             name="ticket-outline"
             size={35}
             color="#333"
-          />
-          <ScrollView style={styles.info}>
+            />
+            <ScrollView style={styles.info}>
             <Text style={styles.title}>Cupons</Text>
             <Text style={styles.description}>Meus cupons de desconto</Text>
-          </ScrollView>
-          <MaterialIcons name="keyboard-arrow-right" color="#999" size={20} />
+            </ScrollView>
+            <MaterialIcons name="keyboard-arrow-right" color="#999" size={20} />
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.option} onPress={() => {}}>
-          <MaterialCommunityIcons name="heart-outline" size={35} color="#333" />
-          <ScrollView style={styles.info}>
+            <MaterialCommunityIcons name="heart-outline" size={35} color="#333" />
+            <ScrollView style={styles.info}>
             <Text style={styles.title}>Favoritos</Text>
             <Text style={styles.description}>Meus locais favoritos</Text>
-          </ScrollView>
-          <MaterialIcons name="keyboard-arrow-right" color="#999" size={20} />
+            </ScrollView>
+            <MaterialIcons name="keyboard-arrow-right" color="#999" size={20} />
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.option} onPress={() => {}}>
-          <MaterialCommunityIcons name="credit-card" size={35} color="#333" />
-          <ScrollView style={styles.info}>
+            <MaterialCommunityIcons name="credit-card" size={35} color="#333" />
+            <ScrollView style={styles.info}>
             <Text style={styles.title}>Fidelidade</Text>
             <Text style={styles.description}>Minhas fidelidades</Text>
-          </ScrollView>
-          <MaterialIcons name="keyboard-arrow-right" color="#999" size={20} />
+            </ScrollView>
+            <MaterialIcons name="keyboard-arrow-right" color="#999" size={20} />
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.option} onPress={() => {}}>
-          <MaterialCommunityIcons name="map-marker" size={35} color="#333" />
-          <ScrollView style={styles.info}>
+            <MaterialCommunityIcons name="map-marker" size={35} color="#333" />
+            <ScrollView style={styles.info}>
             <Text style={styles.title}>Endereços</Text>
             <Text style={styles.description}>Meus endereços de entrega</Text>
-          </ScrollView>
-          <MaterialIcons name="keyboard-arrow-right" color="#999" size={20} />
+            </ScrollView>
+            <MaterialIcons name="keyboard-arrow-right" color="#999" size={20} />
         </TouchableOpacity>
-      </ScrollView>
+        </ScrollView>
 
       <View style={styles.menuAdicional}>
         <TouchableOpacity style={styles.opcoesAdicionais}>
