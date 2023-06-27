@@ -11,6 +11,7 @@ import Buscar from './screens/Buscar';
 import Perfil from './screens/Perfil';
 import Pedidos from './screens/Pedidos';
 import Pagamentos from './screens/Pagamentos';
+import PedidosAnteriores from './screens/PedidosAnteriores';
 
 const PerfilStack = createStackNavigator();
 const Tab = createMaterialTopTabNavigator();
