@@ -10,7 +10,7 @@ import Ofertas from '../../components/Home/Ofertas';
 import Categorias from '../../components/Home/Categorias';
 import Restaurantes from '../../components/Home/Restaurantes';
 
-export default function Home() {
+export default function Home({ navigation }) {
   return (
     <ScrollView showsHorizontalScrollIndicator={true} style={styles.container}>
       <Endereco />
@@ -18,7 +18,7 @@ export default function Home() {
       <CupomDesconto />
       <Sugestoes />
       <Promocoes />
-      <Ofertas />
+      <Ofertas navigation={navigation} />
       <Categorias />
       <Restaurantes />
     </ScrollView>
