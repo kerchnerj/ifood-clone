@@ -1,10 +1,10 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-export default function Buscar() {
+export default function Busca() {
     return (
     <View style={styles.container}>
-        <Text>Buscar</Text>
+        <Text>Busca</Text>
     </View>
     );
 }
